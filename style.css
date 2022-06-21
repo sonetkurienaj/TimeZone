@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(25, 25, 124);
+
+}
+
+.heading{
+    color:whitesmoke;
+    text-align: center;    
+    margin-bottom: 40px;
+    text-decoration: underline;
+    ;
+   
+}
+.timebox{
+  border: 3px solid white;
+   width: 220px;
+  margin:20px;
+  padding: 10px;
+
+
+
+
+
+ 
+}
+.mainbox{
+    display:flex;
+    
+
+}
+
+
+.timebox h1{
+    color: white;
+ 
+}
+.timebox p{
+    color: rgb(14, 243, 83);
+    font-weight: 800;
+    font-size: 33px;
+
+   
+}

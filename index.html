@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w-timezone</title>
+</head>
+
+<body>
+    <h1 class="heading">Time-Zone-chart</h1>
+    <div class="mainbox">
+        <div class="timebox">
+            <h1>India</h1>
+            <p id="indiaTime"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>London</h1>
+            <p id="londonTime"></p>
+
+        </div>
+        <div class="timebox">
+            <h1>Italy</h1>
+            <p id="italyTime"></p>
+
+        </div>
+        <div class="timebox">
+            <h1>Berlin</h1>
+            <p id="berlinTime"></p>
+
+        </div>
+        <div class="timebox">
+            <h1>Spain</h1>
+            <p id="spainTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <h1>Sweden</h1>
+            <p id="swedenTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <h1>Croatia</h1>
+            <p id="croatiaTime"></p>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+<script>
+    var getIndiaTime = function () {
+        document.getElementById("indiaTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Asia/kolkata', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getIndiaTime();
+    setInterval(getIndiaTime, 1000);
+
+    //lodontime
+    var getLondonTime = function () {
+        document.getElementById("londonTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/London', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getLondonTime();
+    setInterval(getLondonTime, 1000);
+    //rome
+
+    var getItalyTime = function () {
+        document.getElementById("italyTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Rome', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getItalyTime();
+    setInterval(getItalyTime, 1000);
+    //berlin
+
+    var getBerlinTime = function () {
+        document.getElementById("berlinTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/berlin', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getBerlinTime();
+    setInterval(getBerlinTime, 1000);
+
+    //spain
+    var getSpainTime = function () {
+        document.getElementById("spainTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/madrid', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getSpainTime();
+    setInterval(getSpainTime, 1000);
+    //sweden
+    var getSwedenTime = function () {
+        document.getElementById("swedenTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Stockholm', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getSwedenTime();
+    setInterval(getSwedenTime, 1000);
+    //Croatia
+    var getCroatiaTime = function () {
+        document.getElementById("croatiaTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Zagreb', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getCroatiaTime();
+    setInterval(getCroatiaTime, 1000);
+
+
+</script>
+
+</html>
