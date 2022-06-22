@@ -44,6 +44,65 @@
 
         </div>
 
+
+
+
+
+
+
+    </div>
+
+    <!--second row-->
+
+
+    <div class="mainbox">
+        <div class="timebox">
+            <h1>Afghanistan</h1>
+            <p id="afghanistanTime"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>Belgium</h1>
+            <p id="belgiumTime"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>Armenia</h1>
+            <p id="armeniaTime"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>Botswana</h1>
+            <p id="botswanaTime"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>Chile</h1>
+            <p id="chileTime"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>Egypt</h1>
+            <p id="egyptTime"></p>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <!--third row-->
+
+    <div class="mainbox">
+
+
+        <div class="timebox">
+            <h1>Japan</h1>
+            <p id="japanTime"></p>
+        </div>
+
         <div class="timebox">
             <h1>Croatia</h1>
             <p id="croatiaTime"></p>
@@ -52,8 +111,9 @@
 
 
 
-
     </div>
+
+
 
 
 
@@ -73,6 +133,7 @@
     }
     getLondonTime();
     setInterval(getLondonTime, 1000);
+
     //rome
 
     var getItalyTime = function () {
@@ -111,7 +172,59 @@
     }
     getCroatiaTime();
     setInterval(getCroatiaTime, 1000);
+    //afghanistan
+    var getAfghanistanTime = function () {
+        document.getElementById("afghanistanTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Asia/kabul', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getAfghanistanTime();
+    setInterval(getAfghanistanTime, 1000);
+    //Belgium
+    var getBelgiumTime = function () {
+        document.getElementById("belgiumTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Brussels', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getBelgiumTime();
+    setInterval(getBelgiumTime, 1000);
 
+    //armenia
+    var getArmeniaTime = function () {
+        document.getElementById("armeniaTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Asia/Yerevan', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getArmeniaTime();
+    setInterval(getArmeniaTime, 1000);
+
+    //botswana
+    var getBotswanaTime = function () {
+        document.getElementById("botswanaTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Africa/Gaborone', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getBotswanaTime();
+    setInterval(getBotswanaTime, 1000);
+    //chile
+
+    var getChileTime = function () {
+        document.getElementById("chileTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'America/Santiago', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getChileTime();
+    setInterval(getChileTime, 1000);
+    //Egypt
+
+    var getEgyptTime = function () {
+        document.getElementById("egyptTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Africa/Cairo', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getEgyptTime();
+    setInterval(getEgyptTime, 1000);
+    //kosovo
+    var getJapanTime = function () {
+        document.getElementById("japanTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Asia/Tokyo', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getJapanTime();
+    setInterval(getJapanTime, 1000);
 
 </script>
 
