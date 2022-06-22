@@ -10,6 +10,10 @@
 </head>
 
 <body>
+
+
+
+
     <h1 class="heading">Time-Zone-chart</h1>
     <div class="mainbox">
         <div class="timebox">
@@ -43,6 +47,8 @@
             <p id="swedenTime"></p>
 
         </div>
+
+
 
 
 
@@ -109,9 +115,74 @@
 
         </div>
 
+        <div class="timebox">
+            <h1>Laos</h1>
+            <p id="laosTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <h1>Kyrgyzstan</h1>
+            <p id="kyrgyzstanTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <h1>Moldova</h1>
+            <p id="moldovaTime"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>Taiwan</h1>
+            <p id="taiwanTime"></p>
+
+        </div>
 
 
     </div>
+
+
+    <!--4th row-->
+    <div class="mainbox">
+
+        <div class="timebox">
+            <h1>Cyprus</h1>
+            <p id="cyprusTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <h1>Norway</h1>
+            <p id="norwayTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <h1>Lithuania</h1>
+            <p id="lithuaniaTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <h1>Romania</h1>
+            <p id="romaniaTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <h1>Greece</h1>
+            <p id="greeceTime"></p>
+
+        </div>
+
+        <div class="timebox">
+            <button id="btn">show-more</button>
+
+        </div>
+
+    </div>
+
+    <!--5th row-->
 
 
 
@@ -225,6 +296,93 @@
     }
     getJapanTime();
     setInterval(getJapanTime, 1000);
+    //loas
+
+    var getLaosTime = function () {
+        document.getElementById("laosTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Asia/Vientiane', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getLaosTime();
+    setInterval(getLaosTime, 1000);
+    //Kyrgyzstan
+    var getKyrgyzstanTime = function () {
+        document.getElementById("kyrgyzstanTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Asia/Bishkek', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getKyrgyzstanTime();
+    setInterval(getKyrgyzstanTime, 1000);
+    //Moldova
+
+
+    var getMoldovaTime = function () {
+        document.getElementById("moldovaTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Chisinau', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getMoldovaTime();
+    setInterval(getMoldovaTime, 1000);
+
+    //Taiwan
+    var getTaiwanTime = function () {
+        document.getElementById("taiwanTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Asia/Taipei', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getTaiwanTime();
+    setInterval(getTaiwanTime, 1000);
+
+    //4th section
+    //Cyprus
+    var getCyprusTime = function () {
+        document.getElementById("cyprusTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Nicosia', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getCyprusTime();
+    setInterval(getCyprusTime, 1000);
+
+    //Norway
+    var getNorwayTime = function () {
+        document.getElementById("norwayTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Oslo', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getNorwayTime();
+    setInterval(getNorwayTime, 1000);
+
+    //Lithuania
+    var getLithuaniaTime = function () {
+        document.getElementById("lithuaniaTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Vilnius', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getLithuaniaTime();
+    setInterval(getLithuaniaTime, 1000);
+    //romania
+    var getRomaniaTime = function () {
+        document.getElementById("romaniaTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Bucharest', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getRomaniaTime();
+    setInterval(getRomaniaTime, 1000);
+
+    //Greece
+    var getGreeceTime = function () {
+        document.getElementById("greeceTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Europe/Athens', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getGreeceTime();
+    setInterval(getGreeceTime, 1000);
+
+    //Djibouti
+    var getDjiboutiTime = function () {
+        document.getElementById("djiboutiTime").innerHTML = new Date().toLocaleString
+            ("en-US", { timeZone: 'Africa/Djibouti', timeStyle: 'medium', hourCycle: 'h24' });
+    }
+    getDjiboutiTime();
+    setInterval(getDjiboutiTime, 1000);
+
+
+
+
+
+
+
 
 </script>
 

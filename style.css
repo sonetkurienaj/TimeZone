@@ -1,29 +1,29 @@
 * {
   margin: 0;
   padding: 0;
-  background-color:black;
-
+  background-color: black;
 }
+
 
 .heading {
   color: whitesmoke;
   
   text-shadow:
-      0 0 7px rgb(34, 126, 57),
-      0 0 10px rgb(20, 190, 49),
-      0 0 21px rgb(76, 223, 56),
-      0 0 42px rgb(102, 231, 188),
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px rgb(13, 139, 80),
-      0 0 151px #0fa;
+      0 0 7px rgb(23, 38, 167),
+      0 0 10px rgb(37, 20, 190),
+      0 0 21px rgb(55, 29, 204),
+      0 0 42px rgb(65, 87, 212),
+      0 0 82px rgb(39, 29, 175),
+      0 0 92px rgb(43, 20, 107),
+      0 0 102px rgb(77, 12, 228),
+      0 0 151px rgb(54, 17, 190);
 
   text-align: center;
   margin-bottom: 40px;
   text-decoration: underline;
 }
 .timebox {
-  border: 3px solid white;
+  border: px solid white;
   width: 220px;
   margin: 20px;
   padding: 10px;
@@ -41,19 +41,23 @@
   text-shadow:
       0 0 4px #fff,
      
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
+      
+      0 0 10px rgb(112, 1, 1);
 
   font-weight: 800;
   font-size: 33px;
 }
 
 
-
-
-
-
-
+.mainbox .timebox button{
+  
+  background-color:white;
+  font-size:17px;
+  font-weight: 400;
+ 
+  padding: 20px;
+  border-radius: 14px;
+  position: absolute;
+  margin-top: 10px;
+  
+}
